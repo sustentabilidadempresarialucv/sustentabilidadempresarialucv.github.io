@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary: #009edb;
+        --primary-light: deepskyblue;
+        --primary-dark: deepskyblue;
+        --secondary: #ffae23;
+        --secondary-light: #fab433;
+        --secondary-dark: orange;
+      }
+
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+      }
+
+      .app-btn {
+        min-width: 70%;
+        max-width: 60%;
+        color: white;
+        border-radius: 16px;
+        padding: 8px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .app-btn--secondary {
+        background: #ffae23;
+        border: 2px solid darkorange;
+        box-shadow: 2px 4px 2px darkorange;
+        border-radius: 16px;
+      }
+
+      .app-btn--secondary:active {
+        border: solid 2px orange;
+        transition: box-shadow 0.2s ease-in-out;
+        box-shadow: none;
+      }
+
+      .onboarding {
+        background: var(--primary);
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid h-100 onboarding">
+      <div class="row">
+        <div class="col-12 d-flex flex-column">
+          <img
+            class="d-flex m-auto"
+            style="width: 180px; height: 180px"
+            src="ucv.svg"
+            alt="UCV" />
+          <div class="d-flex justify-content-center mt-5">
+            <a
+              href="https://sustentabilidadempresarialucv.netlify.app/mobile"
+              class="app-btn app-btn--secondary">
+              Continuar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
